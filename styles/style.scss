@@ -1,5 +1,8 @@
 body {
   background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -7,4 +10,36 @@ h1 {
   color: #ccc;
   text-shadow: 0 0 10px #f00;
   text-align: center;
+}
+
+span {
+  color: #eee;
+}
+
+input {
+  padding: 0.5rem;
+  background-color: #000;
+  color: #eee;
+  border: 2px solid #eee;
+  outline: none;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #000;
+  color: #eee;
+  border: 2px solid #eee;
+  cursor: pointer;
+  margin: 0.25rem;
+
+  &:hover {
+    background-color: #eee;
+    color: #000;
+
+    &:disabled {
+      background-color: #000;
+      color: #eee;
+      cursor: not-allowed;
+    }
+  }
 }

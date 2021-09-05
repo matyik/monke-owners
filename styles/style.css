@@ -1,5 +1,15 @@
 body {
   background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
@@ -7,5 +17,37 @@ h1 {
   color: #ccc;
   text-shadow: 0 0 10px #f00;
   text-align: center;
+}
+
+span {
+  color: #eee;
+}
+
+input {
+  padding: 0.5rem;
+  background-color: #000;
+  color: #eee;
+  border: 2px solid #eee;
+  outline: none;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #000;
+  color: #eee;
+  border: 2px solid #eee;
+  cursor: pointer;
+  margin: 0.25rem;
+}
+
+button:hover {
+  background-color: #eee;
+  color: #000;
+}
+
+button:hover:disabled {
+  background-color: #000;
+  color: #eee;
+  cursor: not-allowed;
 }
 /*# sourceMappingURL=style.css.map */
